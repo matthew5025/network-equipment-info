@@ -1,0 +1,764 @@
+^@^@D%GHELO
+4.1603-1.0.38-116.174
+CPU0
+PMCM
+PMCS
+AFEL
+PWRZ
+MEML
+APMT
+PMCD
+L1CD
+MMUI
+CODE
+ZBBS
+MAIN
+DRAM
+NVRAM memcfg 0x327
+MCB chksum 0xf65f52a5
+DDR3-1600 CL11 256MB
+
+MemsysInit lpe2_custom 0p10 20140709
+DDR3
+80711BD8 80003000 00000070 014028BC
+MCB rev=0x00020201 Ref ID=0x028BC Sub Bld=0x014
+
+ZQ Cal LP PHY
+ p_term=0x06 n_term=0x06 p_drive=0x10 n_drive=0x10
+PLL Ref(Hz)=0x02FAF080 UI STEPS=0x04F
+ DDR CLK(MHz)=0x31F WL CLK dly(ps)=0x0C8 bitT(ps)=0x271 VDLsize(fs)=0x1EE7 CLK_VDL=0x021
+Changed Byte Lane LDE
+Changed Byte Lane LDE
+Add/Ctl Alignment
+no adjustment
+memsys_init call phy init returns 0x00000000
+MEMC init size 1 clock 6
+
+MemsysInit lpe2_custom 0p10 20140709
+DDR3
+80711BD8 80003000 000003E0 014028BC
+MCB rev=0x00020201 Ref ID=0x028BC Sub Bld=0x014
+
+SHMOO 28nm 0p9 20140709
+80003000 80002500 00000000 00020000 00000000
+ROSC Auto clk counter start
+ROSC final result:
+nRing Osc Meas check
+rosc 0x00 = 0x0000006A clk_count = 0x00000354 scb_clk = 0x0064 MHz
+rosc 0x01 = 0x0000007E clk_count = 0x00000354 scb_clk = 0x0064 MHz
+rosc 0x02 = 0x00000071 clk_count = 0x00000354 scb_clk = 0x0064 MHz
+rosc 0x03 = 0x000000B4 clk_count = 0x00000354 scb_clk = 0x0064 MHz
+rosc 0x04 = 0x000000FE clk_count = 0x00000354 scb_clk = 0x0064 MHz
+rosc 0x05 = 0x000000C3 clk_count = 0x00000354 scb_clk = 0x0064 MHz
+rosc 0x06 = 0x00000074 clk_count = 0x00000354 scb_clk = 0x0064 MHz
+rosc 0x07 = 0x00000053 clk_count = 0x00000354 scb_clk = 0x0064 MHz
+rosc 0x08 = 0x00000099 clk_count = 0x00000354 scb_clk = 0x0064 MHz
+rosc 0x09 = 0x0000006E clk_count = 0x00000354 scb_clk = 0x0064 MHz
+rosc 0x0A = 0x00000061 clk_count = 0x00000354 scb_clk = 0x0064 MHz
+rosc 0x0B = 0x00000073 clk_count = 0x00000354 scb_clk = 0x0064 MHz
+
+ROSC Auto clk counter finished
+One UI Steps : 0x5A
+
+Shmoo WL
+   000000000011111111112222222222333333333344444444445555555555666666666677777777778888888888
+   012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789
+00 S-----------------------------------------------X+++++++++++++++++++++++++++++++++++++++++
+01 S-----------------------------------X+++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 
+
+Using passive Rd Data Delay 
+SET RD DATA DELAY 0x800034B0 = 0x00000006
+SET RD DATA DELAY 0x800036B0 = 0x00000006
+
+Shmoo RD En
+Initial:  WL Cyc=0x0 ODT Delay=0x0 ODT PreLen=0x2
+Post:     WL Cyc=0x0 ODT Delay=0x0 ODT PreLen=0x2
+Initial:  WL Cyc=0x0 ODT Delay=0x0 ODT PreLen=0x2
+Post:     WL Cyc=0x0 ODT Delay=0x0 ODT PreLen=0x2
+B0 RISE UI=1 VDL=11 PICK UI=2 VDL=11
+B1 RISE UI=1 VDL=1F PICK UI=2 VDL=1F
+   000000000011111111112222222222333333333344444444445555555555666666666677777777778888888888
+   012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789
+00 --S--------------X++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+01 --S----------------------------X++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+Rd Dat Dly
+6 ++
+5 ++
+4 ++
+3 ++
+2 --
+ 
+Converged RD-DAT-DLY = 2
+ BL0 Final RD-DAT-DLY = 4
+ BL1 Final RD-DAT-DLY = 4
+
+Shmoo RD DQ NP
+DQS :
+B0 VDL=4F ok
+B1 VDL=4F ok
+   000000000011111111112222222222333333333344444444445555555555666666666677777777778888888888
+   012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789
+00 -----------+++++++++++++++++++++++++++++++++X++++++++++++++++++++++++++++++++++-----------
+01 --------------++++++++++++++++++++++++++++++++X+++++++++++++++++++++++++++++++++----------
+02 ----------+++++++++++++++++++++++++++++++++X+++++++++++++++++++++++++++++++++-------------
+03 -------------++++++++++++++++++++++++++++++++++X+++++++++++++++++++++++++++++++++++-------
+04 --------+++++++++++++++++++++++++++++++++X++++++++++++++++++++++++++++++++++--------------
+05 --------+++++++++++++++++++++++++++++++++X++++++++++++++++++++++++++++++++++--------------
+06 ----------+++++++++++++++++++++++++++++++++X+++++++++++++++++++++++++++++++++-------------
+07 -------------++++++++++++++++++++++++++++++++++X++++++++++++++++++++++++++++++++++--------
+08 ------------+++++++++++++++++++++++++++++++++X++++++++++++++++++++++++++++++++++----------
+09 ----------------+++++++++++++++++++++++++++++++++X++++++++++++++++++++++++++++++++++------
+10 ------------++++++++++++++++++++++++++++++++X+++++++++++++++++++++++++++++++++------------
+11 ---------------+++++++++++++++++++++++++++++++++X++++++++++++++++++++++++++++++++++-------
+12 ----------------++++++++++++++++++++++++++++++++X++++++++++++++++++++++++++++++++---------
+13 ------------------++++++++++++++++++++++++++++++++++X++++++++++++++++++++++++++++++++++---
+14 --------------+++++++++++++++++++++++++++++++++X+++++++++++++++++++++++++++++++++---------
+15 -----------------+++++++++++++++++++++++++++++++++X+++++++++++++++++++++++++++++++++------
+
+Shmoo RD DQ P
+   000000000011111111112222222222333333333344444444445555555555666666666677777777778888888888
+   012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789
+00 -----------++++++++++++++++++++++++++++++++++X++++++++++++++++++++++++++++++++++----------
+01 --------------++++++++++++++++++++++++++++++++X+++++++++++++++++++++++++++++++++----------
+02 ----------++++++++++++++++++++++++++++++++++X++++++++++++++++++++++++++++++++++-----------
+03 --------------+++++++++++++++++++++++++++++++++X++++++++++++++++++++++++++++++++++--------
+04 --------++++++++++++++++++++++++++++++++++X++++++++++++++++++++++++++++++++++-------------
+05 --------++++++++++++++++++++++++++++++++++X++++++++++++++++++++++++++++++++++-------------
+06 ---------++++++++++++++++++++++++++++++++++X++++++++++++++++++++++++++++++++++------------
+07 -------------++++++++++++++++++++++++++++++++++X++++++++++++++++++++++++++++++++++--------
+08 ------------+++++++++++++++++++++++++++++++++X++++++++++++++++++++++++++++++++++----------
+09 -----------------+++++++++++++++++++++++++++++++++X++++++++++++++++++++++++++++++++++-----
+10 ------------+++++++++++++++++++++++++++++++++X+++++++++++++++++++++++++++++++++-----------
+11 ---------------+++++++++++++++++++++++++++++++++X+++++++++++++++++++++++++++++++++--------
+12 ---------------+++++++++++++++++++++++++++++++++X+++++++++++++++++++++++++++++++++--------
+13 ------------------++++++++++++++++++++++++++++++++++X++++++++++++++++++++++++++++++++++---
+14 --------------+++++++++++++++++++++++++++++++++X++++++++++++++++++++++++++++++++++--------
+15 ------------------++++++++++++++++++++++++++++++++X++++++++++++++++++++++++++++++++-------
+
+Shmoo RD DQ N
+   000000000011111111112222222222333333333344444444445555555555666666666677777777778888888888
+   012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789
+00 ------++++++++++++++++++++++++++++++++++++X++++++++++++++++++++++++++++++++++++-----------
+01 --------+++++++++++++++++++++++++++++++++++X++++++++++++++++++++++++++++++++++++----------
+02 ------+++++++++++++++++++++++++++++++++++X+++++++++++++++++++++++++++++++++++-------------
+03 --------+++++++++++++++++++++++++++++++++++++X+++++++++++++++++++++++++++++++++++++-------
+04 --++++++++++++++++++++++++++++++++++++X+++++++++++++++++++++++++++++++++++++--------------
+05 ---++++++++++++++++++++++++++++++++++++X++++++++++++++++++++++++++++++++++++--------------
+06 -----++++++++++++++++++++++++++++++++++++X++++++++++++++++++++++++++++++++++++------------
+07 --------+++++++++++++++++++++++++++++++++++++X+++++++++++++++++++++++++++++++++++++-------
+08 --------+++++++++++++++++++++++++++++++++++X++++++++++++++++++++++++++++++++++++----------
+09 ------------+++++++++++++++++++++++++++++++++++X++++++++++++++++++++++++++++++++++++------
+10 -------+++++++++++++++++++++++++++++++++++X+++++++++++++++++++++++++++++++++++------------
+11 ----------++++++++++++++++++++++++++++++++++++X+++++++++++++++++++++++++++++++++++++------
+12 ----------+++++++++++++++++++++++++++++++++++X+++++++++++++++++++++++++++++++++++---------
+13 --------------++++++++++++++++++++++++++++++++++++X+++++++++++++++++++++++++++++++++++++--
+14 ----------+++++++++++++++++++++++++++++++++++X+++++++++++++++++++++++++++++++++++---------
+15 ------------+++++++++++++++++++++++++++++++++++X++++++++++++++++++++++++++++++++++++------
+
+Shmoo WR DQ
+   000000000011111111112222222222333333333344444444445555555555666666666677777777778888888888
+   012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789
+00 ---++++++++++++++++++++++++++++++++++++X++++++++++++++++++++++++++++++++++++--------------
+01 --------+++++++++++++++++++++++++++++++++++X+++++++++++++++++++++++++++++++++++-----------
+02 ---+++++++++++++++++++++++++++++++++++X++++++++++++++++++++++++++++++++++++---------------
+03 ------++++++++++++++++++++++++++++++++++++X+++++++++++++++++++++++++++++++++++++----------
+04 --++++++++++++++++++++++++++++++++++++X++++++++++++++++++++++++++++++++++++---------------
+05 +++++++++++++++++++++++++++++++++++++X+++++++++++++++++++++++++++++++++++++---------------
+06 -----+++++++++++++++++++++++++++++++++++X+++++++++++++++++++++++++++++++++++--------------
+07 --------+++++++++++++++++++++++++++++++++++X++++++++++++++++++++++++++++++++++++----------
+08 -+++++++++++++++++++++++++++++++++++X+++++++++++++++++++++++++++++++++++------------------
+09 -------+++++++++++++++++++++++++++++++++++X++++++++++++++++++++++++++++++++++++-----------
+10 -++++++++++++++++++++++++++++++++++X++++++++++++++++++++++++++++++++++--------------------
+11 ----+++++++++++++++++++++++++++++++++++++X+++++++++++++++++++++++++++++++++++++-----------
+12 ------+++++++++++++++++++++++++++++++++++X++++++++++++++++++++++++++++++++++++------------
+13 ----------++++++++++++++++++++++++++++++++++X+++++++++++++++++++++++++++++++++++----------
+14 ----+++++++++++++++++++++++++++++++++++X++++++++++++++++++++++++++++++++++++--------------
+15 ------+++++++++++++++++++++++++++++++++++X++++++++++++++++++++++++++++++++++++------------
+
+Shmoo WR DM
+WR DM
+   000000000011111111112222222222333333333344444444445555555555666666666677777777778888888888
+   012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789
+00 ----++++++++++++++++++++++++++++++++++++X+++++++++++++++++++++++++++++++++++++------------
+01 --------+++++++++++++++++++++++++++++++++++X++++++++++++++++++++++++++++++++++++----------
+memsys_init call shmoo returns 0x00000000
+PASS
+FPS0
+BT89
+0001
+BT81
+0492
+NAN3
+RFS1
+NAN5
+
+
+Base: 4.16_03
+CFE version 1.0.38-116.174 for BCM963138 (32bit,SP,LE)
+Build Date: Tue Nov  3 18:02:27 SGT 2015 (halim@rdfwdev2.aztech.com)
+Copyright (C) 2000-2013 Broadcom Corporation.
+
+Boot Strap Register:  0x7d7dfc2f
+Chip ID: BCM63139B0, ARM Cortex A9 Dual Core: 1000MHz
+Total Memory: 268435456 bytes (256MB)
+NAND ECC BCH-4, page size 0x800 bytes, spare size used 64 bytes
+NAND flash device: Spansion S34ML01G1, id 0x01f1 block 128KB size 131072KB
+pmc_init:PMC using DQM mode
+pmc_switch_power_up: Rgmii Tx clock zone1 enable 1 zone2 enable 0. 
+
+ LINK DOWN IMP Port 
+Creating CPU ring for queue number 0 with 32 packets descriptor=0x00f65624
+ Done initializing Ring 0 Base=0x42a1ba20K End=0x42a1bc20K calculated entries= 32 RDD Base=0x02a1ba20K descriptor=0x00f65624
+Board IP address                  : 192.168.1.1:ffffff00  
+Host IP address                   : 192.168.1.100  
+Gateway IP address                :   
+Run from flash/host/tftp (f/h/c)  : f  
+Default host run file name        : vmlinux  
+Default host flash file name      : bcm963xx_fs_kernel  
+Boot delay (0-9 seconds)          : 3  
+Boot image (0=latest, 1=previous) : 0  
+Default host ramdisk file name    :   
+Default ramdisk store address     :   
+Board Id (0-16)                   : 963138REF_P402  
+Number of MAC Addresses (1-32)    : 7  
+Base MAC Address                  : e0:8e:3c:1e:3d:6e  
+PSI Size (1-512) KBytes            : 48  
+Enable Backup PSI [0|1]           : 0  
+System Log Size (0-256) KBytes    : 0  
+Auxillary File System Size Percent: 0  
+Serial Number (13 digits)         : 1607160901782  
+Current Mode (F|N)                : N  
+MC memory allocation (MB)         : 4  
+TM memory allocation (MB)         : 20  
+WPS Device Pin                        : "36429189"  
+WLan Feature                      : 0x00  
+Voice Board Configuration (0-18)  : NOSLIC  
+
+
+ LINK UP IMP Port 
+*** Press any key to stop auto run (3 seconds) ***
+Auto run second count down: 33210
+Booting from latest image (address 0x00020000, flash offset 0x00020000) ...
+Decompression OK!
+Entry at 0x00008000
+Closing network.
+Starting program at 0x00008000
+Booting Linux on physical CPU 0
+Linux version 3.4.11-rt19 (halim@rdfwdev2.aztech.com) (gcc version 4.6.2 (Buildroot 2011.11) ) #15 SMP PREEMPT Tue Nov 3 18:03:51 SGT 2015
+CPU: ARMv7 Processor [414fc091] revision 1 (ARMv7), cr=10c53c7d
+CPU: PIPT / VIPT nonaliasing data cache, VIPT aliasing instruction cache
+Machine: BCM963138
+bootconsole [earlycon0] enabled
+Memory policy: ECC disabled, Data cache writealloc
+creating a MT_MEMORY_NONCACHED device at physical address of 0x0fe00000 to virtual address at 0xcfe00000 with size of 0x200000 byte for DSL
+creating a MT_MEMORY_NONCACHED device at physical address of 0x0ea00000 to virtual address at 0xcea00000 with size of 0x1400000 byte for RDPA tm
+creating a MT_MEMORY_NONCACHED device at physical address of 0x0e600000 to virtual address at 0xce600000 with size of 0x400000 byte for RDPA mc
+On node 0 totalpages: 58880
+free_area_init_node: node 0, pgdat c04849e0, node_mem_map c1000000
+  DMA zone: 32 pages used for memmap
+  DMA zone: 0 pages reserved
+  DMA zone: 4064 pages, LIFO batch:0
+  Normal zone: 480 pages used for memmap
+  Normal zone: 54304 pages, LIFO batch:15
+pmc_init:PMC using DQM mode
+L310 cache controller enabled
+l2x0: 16 ways, CACHE_ID 0x410000c9, AUX_CTRL 0x6a450000, Cache size: 524288 B
+PERCPU: Embedded 7 pages/cpu @c1204000 s5408 r8192 d15072 u32768
+pcpu-alloc: s5408 r8192 d15072 u32768 alloc=8*4096
+pcpu-alloc: [0] 0 [0] 1 
+Built 1 zonelists in Zone order, mobility grouping on.  Total pages: 58368
+Kernel command line: console=ttyS0,115200 earlyprintk debug
+PID hash table entries: 1024 (order: 0, 4096 bytes)
+Dentry cache hash table entries: 32768 (order: 5, 131072 bytes)
+Inode-cache hash table entries: 16384 (order: 4, 65536 bytes)
+Memory: 230MB = 230MB total
+Memory: 228348k/228348k available, 33796k reserved, 0K highmem
+Virtual kernel memory layout:
+    vector  : 0xffff0000 - 0xffff1000   (   4 kB)
+    fixmap  : 0xfff00000 - 0xfffe0000   ( 896 kB)
+    vmalloc : 0xd0800000 - 0xff000000   ( 744 MB)
+    lowmem  : 0xc0000000 - 0xd0000000   ( 256 MB)
+    modules : 0xbf000000 - 0xc0000000   (  16 MB)
+      .text : 0xc0008000 - 0xc042f600   (4254 kB)
+      .init : 0xc0430000 - 0xc0450520   ( 130 kB)
+      .data : 0xc0452000 - 0xc0485540   ( 206 kB)
+       .bss : 0xc0485564 - 0xc04b7308   ( 200 kB)
+Preemptible hierarchical RCU implementation.
+	Dump stacks of tasks blocking RCU-preempt GP.
+NR_IRQS:256
+Cortex A9 MPCORE GIC init
+DIST at fc01f000, CPU_IF at fc01e100
+sched_clock: 32 bits at 1kHz, resolution 1000000ns, wraps every 4294967295ms
+console [ttyS0] enabled, bootconsole disabled
+console [ttyS0] enabled, bootconsole disabled
+Calibrating delay loop... 1990.65 BogoMIPS (lpj=995328)
+pid_max: default: 32768 minimum: 301
+Mount-cache hash table entries: 512
+--Kernel Config--
+  SMP=1
+  PREEMPT=1
+  DEBUG_SPINLOCK=0
+  DEBUG_MUTEXES=0
+CPU: Testing write buffer coherency: ok
+Broadcom Logger v0.1 Oct 16 2015 11:48:10
+Setting up static identity map for 0x328bf8 - 0x328c2c
+CPU1: Booted secondary processor
+CPU1: Unknown IPI message 0x1
+Brought up 2 CPUs
+SMP: Total of 2 processors activated (3981.31 BogoMIPS).
+NET: Registered protocol family 16
+bcm63xx_pcie: applying serdes parameters
+PCIE port 0 link-up
+PCI host bridge to bus 0000:00
+pci_bus 0000:00: root bus resource [mem 0x90000000-0x9fffffff]
+pci 0000:00:00.0: [14e4:6313] type 01 class 0x060400
+pci 0000:00:00.0: PME# supported from D0 D3hot
+PCI: bus0: Fast back to back transfers disabled
+pci 0000:01:00.0: [14e4:aa52] type 00 class 0x028000
+pci 0000:01:00.0: reg 10: [mem 0x00000000-0x00007fff 64bit]
+pci 0000:01:00.0: reg 18: [mem 0x00000000-0x003fffff 64bit]
+pci 0000:01:00.0: supports D1 D2
+PCI: bus1: Fast back to back transfers disabled
+pci 0000:00:00.0: BAR 8: assigned [mem 0x90000000-0x905fffff]
+pci 0000:01:00.0: BAR 2: assigned [mem 0x90000000-0x903fffff 64bit]
+pci 0000:01:00.0: BAR 0: assigned [mem 0x90400000-0x90407fff 64bit]
+pci 0000:00:00.0: PCI bridge to [bus 01-01]
+pci 0000:00:00.0:   bridge window [mem 0x90000000-0x905fffff]
+PCI: enabling device 0000:00:00.0 (0140 -> 0143)
+bcm63xx_pcie: applying serdes parameters
+PCIE port 1 power-down
+bio: create slab <bio-0> at 0
+SCSI subsystem initialized
+usbcore: registered new interface driver usbfs
+usbcore: registered new interface driver hub
+usbcore: registered new device driver usb
+bcmhs_spi bcmhs_spi.1: master is unqueued, this is deprecated
+skbFreeTask created successfully
+[0;34mBLOG v3.0 Initialized[0m
+BLOG Rule v1.0 Initialized
+Broadcom IQoS v0.1 Oct 16 2015 12:01:35 initialized
+Broadcom GBPM v0.1 Oct 16 2015 12:01:36 initialized
+Switching to clocksource timer_cs
+NET: Registered protocol family 2
+IP route cache hash table entries: 2048 (order: 1, 8192 bytes)
+TCP established hash table entries: 8192 (order: 4, 65536 bytes)
+TCP bind hash table entries: 8192 (order: 4, 98304 bytes)
+TCP: Hash tables configured (established 8192 bind 8192)
+TCP: reno registered
+UDP hash table entries: 128 (order: 0, 4096 bytes)
+UDP-Lite hash table entries: 128 (order: 0, 4096 bytes)
+NET: Registered protocol family 1
+squashfs: version 4.0 (2009/01/31) Phillip Lougher
+jffs2: version 2.2. (NAND) © 2001-2006 Red Hat, Inc.
+fuse init (API version 7.18)
+msgmni has been set to 445
+io scheduler noop registered (default)
+Broadcom NAND controller (BrcmNand Controller)
+mtd->oobsize=0, mtd->eccOobSize=0
+NAND_CS_NAND_XOR=00000000
+B4: NandSelect=40000001, nandConfig=25152300, chipSelect=0
+brcmnand_read_id: CS0: dev_id=01f1801d
+After: NandSelect=00000001, nandConfig=25152300
+Block size=00020000, erase shift=17
+NAND Config: Reg=25152300, chipSize=128 MB, blockSize=128K, erase_shift=11
+busWidth=1, pageSize=2048B, page_shift=11, page_mask=000007ff
+timing1 not adjusted: 65644458
+timing2 not adjusted: 80000e56
+BrcmNAND mfg 1 f1 SPANSION_S30ML01GP_08 128MB on CS0
+
+Found NAND on CS0: ACC=c3040010, cfg=25152300, flashId=01f1801d, tim1=65644458, tim2=80000e56
+BrcmNAND version = 0x80000700 128MB @00000000
+brcmnand_scan: B4 nand_select = 00000001
+brcmnand_scan: After nand_select = 00000001
+handle_acc_control: default CORR ERR threshold  3 bits
+ACC: 16 OOB bytes per 512B ECC step; from ID probe: 16
+page_shift=11, bbt_erase_shift=17, chip_shift=27, phys_erase_shift=17
+Brcm NAND controller version = 7.0 NAND flash size 128MB @18000000
+ECC layout=brcmnand_oob_bch4_2k
+brcmnand_scan:  mtd->oobsize=64
+brcmnand_scan: oobavail=35, eccsize=512, writesize=2048
+brcmnand_scan, eccsize=512, writesize=2048, eccsteps=4, ecclevel=4, eccbytes=7
+-->brcmnand_default_bbt
+brcmnand_default_bbt: bbt_td = bbt_slc_bch4_main_descr
+Bad block table Bbt0 found at page 0000ffc0, version 0x01 for chip on CS0
+Bad block table 1tbB found at page 0000ff80, version 0x01 for chip on CS0
+brcmnand_reset_corr_threshold: default CORR ERR threshold  3 bits for CS0
+Creating 6 MTD partitions on "brcmnand.0":
+0x000000020000-0x000003d80000 : "rootfs"
+0x000003d80000-0x000007ae0000 : "rootfs_update"
+0x000007b00000-0x000007f00000 : "data"
+0x000000000000-0x000000020000 : "nvram"
+0x000000020000-0x000003d80000 : "image"
+0x000003d80000-0x000007ae0000 : "image_update"
+PPP generic driver version 2.4.2
+PPP BSD Compression module registered
+PPP Deflate Compression module registered
+PPP MPPE Compression module registered
+NET: Registered protocol family 24
+usbcore: registered new interface driver asix
+usbcore: registered new interface driver cdc_ether
+usbcore: registered new interface driver cdc_eem
+usbcore: registered new interface driver rndis_host
+usbcore: registered new interface driver cdc_ncm
+i2c /dev entries driver
+brcmboard: brcm_board_init entry
+SES: Button Interrupt 0x1 is enabled
+SES: LED GPIO 0x8018 is enabled
+DYING GASP IRQ initialized 
+brcm_board_init: wlanrst_irq=2
+Serial: BCM63XX driver $Revision: 3.00 $
+[0;33mMagic SysRq with Auxilliary trigger char enabled (type ^ h for list of supported commands)[0m
+ttyS0 at MMIO 0xfffe8600 (irq = 64) is a BCM63XX
+ttyS1 at MMIO 0xfffe8620 (irq = 65) is a BCM63XX
+BPM: tot_mem_size=268435456B (256MB), buf_mem_size <15%> =40265310B (38MB), num of buffers=19972, buf size=2016
+Broadcom BPM Module Char Driver v0.1 Oct 16 2015 11:53:57 Registered<244>[0m
+GACT probability NOT on
+Mirror/redirect action on
+u32 classifier
+    input device check on
+    Actions configured
+TCP: cubic registered
+Initializing XFRM netlink socket
+NET: Registered protocol family 10
+IPv6 over IPv4 tunneling driver
+NET: Registered protocol family 17
+NET: Registered protocol family 15
+Initializing MCPD Module
+Ebtables v2.0 registered
+ebt_time registered
+ebt_ftos registered
+ebt_wmm_mark registered
+8021q: 802.1Q VLAN Support v1.8
+VFS: Mounted root (jffs2 filesystem) readonly on device 31:0.
+Freeing init memory: 128K
+init started: BusyBox v1.17.2 (2015-10-16 00:50:54 SGT)
+starting pid 253, tty '': '/bin/sh -l -c "bcm_boot_launcher start"'
+Mounting filesystems...
+Configuring system...
+Loading drivers and kernel modules... 
+
+rdpa: module license 'Proprietary' taints kernel.
+Disabling lock debugging due to kernel taint
+cat: can't open '/dev/rgs_logger': No such device or address
+ddr_tm_base_address 0xcea00000, size 20971520/20971520, ddr_tm_base_address_phys 0x0ea00000
+ddr_multicast_base_address 0xce600000, size 4194304/4194304, ddr_multicast_base_address_phys 0x0e600000
+++++Runner gso_desc_pool created successfully
+brcmchipinfo: brcm_chipinfo_init entry
+NBUFF v1.0 Initialized
+[0;36;44mInitialized fcache state[0m
+[0;36;44mBroadcom Packet Flow Cache  Char Driver v2.2 Oct 16 2015 11:54:01 Registered<242>[0m
+Created Proc FS /procfs/fcache
+[0;36;44mBroadcom Packet Flow Cache registered with netdev chain[0m
+[0;36;44mBroadcom Packet Flow Cache learning via BLOG enabled.[0m
+[0;35m[FHW]  pktDbgLvl[0xbf1415e4]=0[0m
+[0;34m[FHW]  fhw_construct: [0m
+[0;36;44mInitialized Fcache HW accelerator layer state[0m
+flwStatsThread created
+[0;36;44mConstructed Broadcom Packet Flow Cache v2.2 Oct 16 2015 11:54:01[0m
+Initialized Runner Unicast Layer
+Initialized Runner Multicast Layer
+[0;36;44mBroadcom Packet Flow Cache HW acceleration enabled.[0m
+Enabled Runner binding to Flow Cache
+Initialized Runner Protocol Layer (700)
+Broadcom Runner Blog Driver Char Driver v0.1 Oct 16 2015 11:54:05 Registered <252>
+pmc_switch_power_up: Rgmii Tx clock zone1 enable 1 zone2 enable 0. 
+
+ LINK DOWN IMP Port 
+Runner Port#0 (Internal MUX Port#2) connects to Crossbar Port#0
+Runner Port#0 (Internal MUX Port#2) connects to Crossbar Port#1
+Switch Port#3 (Internal MUX Port#0) connects to Crossbar Port#4
+Unused MUX Internal Port#1 connects to Crossbar External Port#2
+Cross Bar MUX Config : Internal Port 00 maps to External Port 04 <reg_val : 0x0000000c>
+Cross Bar MUX Config : Internal Port 01 maps to External Port 02 <reg_val : 0x00000014>
+Cross Bar MUX Config : Internal Port 02 maps to External Port 00 <reg_val : 0x00000014>
+Error: GPIO pin for Serdes not defined
+Broadcom BCM63139B0 Ethernet Network Device v0.1 Oct 16 2015 11:59:25
+dgasp: kerSysRegisterDyingGaspHandler: bcmsw registered 
+++++ disabling GSO on logical_port=0 dev=eth0
+eth0: <Int sw port: 0> <Logical : 00> PHY_ID <0x05980006 : 0x06> MAC : E0:8E:3C:1E:3D:6E
+eth1: <Ext sw port: 0> <Logical : 08> PHY_ID <0x0007f008 : 0x08> MAC : E0:8E:3C:1E:3D:6E
+eth2: <Ext sw port: 1> <Logical : 09> PHY_ID <0x0007f009 : 0x09> MAC : E0:8E:3C:1E:3D:6E
+eth3: <Ext sw port: 2> <Logical : 10> PHY_ID <0x0007f00a : 0x0a> MAC : E0:8E:3C:1E:3D:6E
+eth4: <Ext sw port: 3> <Logical : 11> PHY_ID <0x0007f00b : 0x0b> MAC : E0:8E:3C:1E:3D:6E
+wl1: <Ext sw port: 7> <Logical : 15> PHY_ID <0x02f80eff : 0x1f> MAC : E0:8E:3C:1E:3D:6E
+Ethernet Auto Power Down and Sleep: Enabled
+Cross bar port 1 of Int switch port 0; Adv capability change : MII=0x01e1, GMII=0x0f00
+Ext switch port 0; Adv capability change : MII=0x01e1, GMII=0x0f00
+Ext switch port 1; Adv capability change : MII=0x01e1, GMII=0x0f00
+Ext switch port 2; Adv capability change : MII=0x01e1, GMII=0x0f00
+Cross bar port 4 of Ext switch port 3; Adv capability change : MII=0x01e1, GMII=0x0f00
+  Chip WAN Only Port 00000001, Defined WAN Only Port 00000000, WAN Only Port Result: 0x00000001
+  Chip WAN Preffered Port 00000000, Defined WAN Preffered Port 00000000, WAN Preffered Port Result: 0x00000000
+  Chip LAN Only Port 00008f00, Defined LAN Only Port 00000000, LAN Only Port Result: 0x00008f00
+Creating CPU ring for queue number 4 with 512 packets descriptor=0xbf0e95e0
+ Done initializing Ring 4 Base=0xffdf0000 End=0xffdf2000 calculated entries= 512 RDD Base=0x00c0c000 descriptor=0xbf0e95e0
+Creating CPU ring for queue number 3 with 512 packets descriptor=0xbf0e95b4
+ Done initializing Ring 3 Base=0xffdec000 End=0xffdee000 calculated entries= 512 RDD Base=0x00c10000 descriptor=0xbf0e95b4
+NComm TMS V6.80 Kernel Module loaded.
+ehci_hcd: USB 2.0 'Enhanced' Host Controller (EHCI) Driver
+ohci_hcd: USB 1.1 'Open' Host Controller (OHCI) Driver
+++++ Powering up USB blocks
+xhci-hcd xhci-hcd.0: xHCI Host Controller
+xhci-hcd xhci-hcd.0: new USB bus registered, assigned bus number 1
+xhci-hcd xhci-hcd.0: irq 106, io mem 0x8000d000
+xHCI xhci_add_endpoint called for root hub
+xHCI xhci_check_bandwidth called for root hub
+hub 1-0:1.0: USB hub found
+hub 1-0:1.0: 0 ports detected
+error opening: /var/run/httpd.pid
+xhci-hcd xhci-hcd.0: xHCI Host Controller
+xhci-hcd xhci-hcd.0: new USB bus registered, assigned bus number 2
+xHCI xhci_add_endpoint called for root hub
+xHCI xhci_check_bandwidth called for root hub
+hub 2-0:1.0: USB hub found
+hub 2-0:1.0: 2 ports detected
+error opening: /var/run/httpd.pid
+ehci-platform ehci-platform.0: Generic Platform EHCI Controller
+ehci-platform ehci-platform.0: new USB bus registered, assigned bus number 3
+ehci-platform ehci-platform.0: irq 105, io mem 0x8000c300
+ehci-platform ehci-platform.0: USB 2.0 started, EHCI 1.00
+hub 3-0:1.0: USB hub found
+hub 3-0:1.0: 2 ports detected
+error opening: /var/run/httpd.pid
+ohci-platform ohci-platform.0: Generic Platform OHCI Controller
+ohci-platform ohci-platform.0: new USB bus registered, assigned bus number 4
+ohci-platform ohci-platform.0: irq 104, io mem 0x8000c400
+hub 4-0:1.0: USB hub found
+hub 4-0:1.0: 2 ports detected
+error opening: /var/run/httpd.pid
+usbcore: registered new interface driver usblp
+Initializing USB Mass Storage driver...
+usbcore: registered new interface driver usb-storage
+USB Mass Storage support registered.
+Initializing WLCSM Module
+WLCSM Module loaded successfully 
+dhd_module_init in
+dhd_queue_budget = 256
+dhd_sta_threshold = 2048
+no wifi platform data, skip
+PCI_PROBE:  bus 1, slot 0,vendor 14E4, device AA52(good PCI location)
+dhdpcie_init: can't find adapter info for this chip
+PCI: enabling device 0000:01:00.0 (0140 -> 0142)
+DHD: dongle ram size is set to 983040(orig 983040) at 0x180000
+dhd_found: 0, instance: 0 
+dhd_attach: wl0: pre-allocated buffer mode is enabled (allocskbsz=2048)
+dhd_attach: wl0: watermark total is 12981
+dhd_attach(): thread:dhd_watchdog_thread:1b0 started
+dhd_attach(): thread:dhd0_dpc:1b1 started
+dhd_deferred_work_init: work queue initialized 
+Dongle Host Driver, version 7.14.89.14.cpe4.16L03.0-kdb
+Compiled in drivers/net/wireless/bcmdhd on Oct 16 2015 at 11:58:19
+dhdpcie_download_code_file: download firmware /etc/wlan/dhd/43602a1/rtecdc.bin
+wl:srom/otp not programmed, using main memory mapped srom info(wombo board)
+wl: ID=pci/0/0/0/
+wl: ID=pci/0/0/0/
+wl: loading /etc/wlan/bcm43602_map.bin
+wl: reading /etc/wlan/bcmcmn_nvramvars.bin, file size=20
+wl: reading /etc/wlan/bcm43602_nvramvars.bin, file size=20
+Replace or append with internal Mac Address
+dhdpcie_bus_write_vars: Download, Upload and compare of NVRAM succeeded.
+PCIe shared addr (0x001db82c) read took 55023 usec before dongle is ready
+DMA RX offset from shared Area 0
+bus->txmode_push is set to 0
+ring_info_raw: 56 
+ac a7 26 00 3c b0 26 00 54 b2 26 00 6c b4 26 00 
+78 b4 26 00 00 00 00 00 00 00 00 00 00 00 00 00 
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+00 00 00 00 86 00 00 00 
+dhdpcie_readshared: max H2D queues 134
+dhd_bus_start: Initializing 134 flowrings
+dhd_bus_cmn_writeshared:
+  0000: 00 80 74 0a 00 00 00 00 
+dhd_bus_cmn_writeshared:
+  0000: 00 1c c6 09 00 00 00 00 
+dhd_bus_cmn_writeshared:
+  0000: 00 80 d2 09 00 00 00 00 
+dhd_bus_cmn_writeshared:
+  0000: 00 00 d3 09 00 00 00 00 
+dhd_bus_cmn_writeshared:
+  0000: 00 40 d3 09 00 00 00 00 
+dhd_bus_cmn_writeshared:
+  0000: c0 de d1 09 
+dhd_bus_cmn_writeshared:
+  0000: 08 00 00 00 
+CUR_ETHERADDR : 6 
+e0 8e 3c 1e 3d 6f 
+dhd_sync_with_dongle: GET_REVINFO device 0x43bb, vendor 0x14e4, chipnum 0xaa52
+Broadcom PCI Device 0x6313 has allocated with driver pcieport
+dhd_module_init out
+CONSOLE: hndarm_armr addr: 0x18002000, cr4_idx: 0
+CONSOLE: 000000.001 
+CONSOLE: RTE (PCIE-MSG_BUF) 7.14.89.14 (r) on BCM43602 r1 @ 40.0/160.0/160.0MHz
+CONSOLE: 000000.008 allocating a max of 511 rxcplid buffers
+CONSOLE: 000000.008 pciemsgbuf0: Broadcom PCIE MSGBUF driver
+CONSOLE: 000000.016 reclaim section 0: Returned 47484 bytes to the heap
+CONSOLE: 000000.048 wl0: Broadcom BCM43602 802.11 Wireless Controller 7.14.89.14 (r)
+CONSOLE: 000000.048 TCAM: 256 used: 185 exceed:0
+CONSOLE: 000000.048 reclaim section 1: Returned 141168 bytes to the heap
+CONSOLE: 
+--SMP support
+wl: dsl_tx_pkt_flush_len=338
+wl: norm_wmark_tot=12981, pktc_wmark_tot=12981
+Broadcom 802.1Q VLAN Interface, v0.1
+brcm_otp_init entry
+RDPA Speed Service Command Driver
+RDPA DS WAN UDP Filter Command Driver
+Starting SWMDK...
+Note: Loading 6300 MDK (default) driver forwl1 (Ext switch port: 7) (Logical Port: 15) Link UP 1000 mbps full duplex
+ 0 chip 
+Switch MDK: num_Ethernet Auto Power Down and Sleep: Enabled
+switches = 1
+Switch MDK: unit = 1; phy_pbmp = 0xf; Energy Efficient Ethernet: Enabled
+config_pbmp = 0x8f nophy_pbmp = 0x80
+unit = 1; port=7 force MAC link up 
+Switch MDK link poll thread: unit=1; phypbmp=0xf config_pbmp=0x8f
+Saving kernel bootup messages for dumpsysinfo...
+Starting CMS smd...
+
+===== Release Version 4.16L.03 (build timestamp 151103_1806) =====
+
+Initializing CMS MDM in Legacy98 mode
+wlctl: wl driver adapter not found
+ip_tables: (C) 2000-2006 Netfilter Core Team
+Broadcom SNTP Stack v0.1 (Nov  3 2015, 18:09:59)
+sendto: Network is unreachable
+ip6_tables: (C) 2000-2006 Netfilter Core Team
+Netfilter messages via NETLINK v0.30.
+device eth1 entered promiscuous mode
+ADDRCONF(NETDEV_UP): eth1: link is not ready
+--- set_stp_mode --- unit=1, port=0 
+--- set_stp_mode --- unit=1, port=1 
+device eth2 entered promiscuous mode
+ADDRCONF(NETDEV_UP): eth2: link is not ready
+--- set_stp_mode --- unit=1, port=2 
+device eth3 entered promiscuous mode
+ADDRCONF(NETDEV_UP): eth3: link is not ready
+--- set_stp_mode --- unit=1, port=3 
+device eth4 entered promiscuous mode
+ADDRCONF(NETDEV_UP): eth4: link is not ready
+sendto: Network is unreachable
+br_netlink_mcpd.c: Setting registration type 0 pid to 686
+ADDRCONF(NETDEV_UP): eth0: link is not ready
+ssk:error:35.891:rcl_traceRouteDiagObject:675:RCL_TRACEROUTEDIAGOBJECT CALLED
+ssk:error:35.930:rcl_iSPProfileObject:298:Setting WAN IP Conn : INTERNET!!
+
+ssk:error:36.001:rcl_wanUsbIntfCfgObject:1352:USB Wan Interface: No Action to take!!
+monitor task is initialized pid= 518 
+starting pid 923, tty '': '-/bin/sh -l -c consoled'
+ipc_homestorage:error:42.645:main:841:HOME STORAGE IPC STARTED
+BCM963139 Broadband Router
+tr64c:error:43.499:stl_wanCommonIntfCfgObject:411:Ethernet...
+
+tr64c:error:43.499:getInternetInterface:286:getInternetInterface called
+tr64c:error:43.853:stl_wanCommonIntfCfgObject:411:Ethernet...
+
+tr64c:error:43.853:getInternetInterface:286:getInternetInterface called
+tr64c:error:43.999:stl_wanCommonIntfCfgObject:411:Ethernet...
+
+tr64c:error:44.000:getInternetInterface:286:getInternetInterface called
+tr64c:error:44.072:stl_wanCommonIntfCfgObject:411:Ethernet...
+
+tr64c:error:44.073:getInternetInterface:286:getInternetInterface called
+tr64c:error:44.151:stl_wanCommonIntfCfgObject:411:Ethernet...
+
+tr64c:error:44.151:getInternetInterface:286:getInternetInterface called
+tr64c:error:44.228:stl_wanCommonIntfCfgObject:411:Ethernet...
+
+tr64c:error:44.228:getInternetInterface:286:getInternetInterface called
+tr64c:error:44.306:stl_wanCommonIntfCfgObject:411:Ethernet...
+
+tr64c:error:44.306:getInternetInterface:286:getInternetInterface called
+tr64c:error:44.384:stl_wanCommonIntfCfgObject:411:Ethernet...
+
+tr64c:error:44.385:getInternetInterface:286:getInternetInterface called
+WLmngr Daemon is running
+wlevt is ready for new msg...
+WPS Device PIN = 36429189
+wlctl: Unsupported
+Setting SSID: "SINGTEL-3D6E"
+Setting SSID: "wl0_Guest1"
+Setting SSID: "wl0_Guest2"
+Setting SSID: "wl0_Guest3"
+wlctl: CONSOLE: 000022.880 wl0: wlc_enable_probe_req: state down, deferring setting of host flags
+CONSOLE: 000022.902 wl0: Radio pwrsave not supported in non-mbss case yet.
+CONSOLE: 000022.908 wl0: Radio pwrsave not supported in non-mbss case yet.
+CONSOLE: 000022.914 wl0: Radio pwrsave not supported in non-mbss case yet.
+CONSOLE: 000022.920 wl0: Radio pwrsave not supported in non-mbss case yet.
+CONSOLE: 000022.928 wl0: invalid chanspec 0x1000
+CONSOLE: 000022.954 wl0: wlc_enable_probe_req: state down, deferring setting of host flags
+CONSOLE: 000022.978 wl0: wlc_enable_probe_req: state down, deferring setting of host flags
+Unsupported
+wlctl: Unsupported
+wlctl: Unsupported
+ifconfig: wl1.2: error fetching interface information: Device not found
+tr69c:error:50.126:getFullPathToIpvxAddrLocked_igd:383:Could not find 10.35.108.124 in data model
+tr69c:error:50.126:updateTr69cCfgInfo_igd:807:could not build full path to 10.35.108.124
+acsd: scan in progress ...
+acsd: scan in progress ...
+acsd: scan in progress ...
+acsd: scan in progress ...
+acsd: scan in progress ...
+acsd: scan in progress ...
+acsd: scan in progress ...
+acsd: scan in progress ...
+acsd: scan in progress ...
+acsd: scan in progress ...
+acsd: scan in progress ...
+acsd: scan in progress ...
+acsd: selected channel spec: 0x1005
+acsd: Adjusted channel spec: 0x1005
+acsd: selected DFS-exit channel spec: 0x1005
+acsd: selected channel spec: 0x1005
+acsd: Adjusted channel spec: 0x1005
+acsd: selected channel spec: 0x1005
+wlctl: Unsupported
+wlctl: Unsupported
+device wl0 is not a slave of br0
+device wl0 entered promiscuous mode
+br0: topology change detected, propagating
+br0: port 5(wl0) entered forwarding state
+br0: port 5(wl0) entered forwarding state
+objId=1
+objId=1
+objId=1
+objId=1
+ARL table flush done
+Success 
+device wl1 is not a slave of br0
+--- set_stp_mode --- unit=1, port=7 
+device wl1 entered promiscuous mode
+br0: topology change detected, propagating
+br0: port 6(wl1) entered forwarding state
+--- set_stp_mode --- unit=1, port=7 
+br0: port 6(wl1) entered forwarding state
+--- set_stp_mode --- unit=1, port=7 
+complete
+complete
+complete
+complete
+complete
+complete
+complete
+complete
+complete
+complete
+complete
+complete
+Inactive LNA
+br0: port 6(wl1) entered disabled state
+--- set_stp_mode --- unit=1, port=7 
+device wl1 left promiscuous mode
+br0: port 6(wl1) entered disabled state
+--- set_stp_mode --- unit=1, port=7 
+--- set_stp_mode --- unit=1, port=7 
+device wl1 entered promiscuous mode
+br0: topology change detected, propagating
+br0: port 6(wl1) entered forwarding state
+--- set_stp_mode --- unit=1, port=7 
+br0: port 6(wl1) entered forwarding state
+--- set_stp_mode --- unit=1, port=7 
+
+Login: 
