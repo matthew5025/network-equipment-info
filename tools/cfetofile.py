@@ -185,7 +185,7 @@ if __name__ == "__main__":
                 print('Verification Failed, will retry.')
                 first_run = True
                 continue
-            with open('full.dmp', 'wb+') as f:
+            with open('full.dmp', 'ab+') as f:
                 f.write(verify_result)
             first_addr = dn_result[2].decode().split(':')[0]
             second_addr = dn_result[3].decode().split(':')[0]
