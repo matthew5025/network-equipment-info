@@ -189,7 +189,7 @@ if __name__ == "__main__":
                 f.write(verify_result)
             first_addr = dn_result[2].decode().split(':')[0]
             second_addr = dn_result[3].decode().split(':')[0]
-            last_addr = dn_result[-11].decode().split(':')[0]
+            last_addr = dn_result[-10].decode().split(':')[0]
             addr_difference = int(second_addr, 16) - int(first_addr, 16)
             curr_address = int(last_addr, 16) + addr_difference
             first_run = True
